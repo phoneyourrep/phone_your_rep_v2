@@ -2,8 +2,6 @@
 
 ## Development
 
-To build the project run `npm run build`
+`npm run dev-server`
 
-To build the project while rebuilding with any time a file is changed run `npm run watch`
-
-Then open dist/index.html with your favorite browser.
+Then go to [http://localhost:8080](http://localhost:8080).

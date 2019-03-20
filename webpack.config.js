@@ -34,5 +34,9 @@ module.exports = {
         filename: "[name].css",
         chunkFilename: "[id].css"
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 8080
+  }
 };
