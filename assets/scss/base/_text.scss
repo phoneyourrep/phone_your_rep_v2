@@ -1,0 +1,73 @@
+// body {
+// 	line-height: 1.5;
+// 	color: $primaryText-color;
+// 	background-color: $body-bkgdColor;
+// }
+
+// h1 {
+// 	font-size: px-to-rem(50px);
+// 	letter-spacing: px-to-em(-0.3px);
+// 	font-weight: 500;
+// 	margin-bottom: px-to-rem(2px);
+// }
+// h2 {
+// 	font-size: px-to-rem(30px);
+// 	font-weight: 500;
+// 	line-height: 1;
+// 	margin-bottom: px-to-rem(11px);
+// }
+// h3 {
+// 	font-size: px-to-rem(16px);
+// 	line-height: 1.38;
+// 	font-weight: 700;
+// 	margin-bottom: px-to-rem(18px);
+// }
+// h4 {
+// 	font-size: px-to-rem(14px);
+// 	font-weight: 700;
+// 	margin-bottom: px-to-rem(8px);
+// }
+// h5 {
+// 	font-size: px-to-rem(13px);
+// 	font-weight: 500;
+// 	margin-bottom: px-to-rem(8px);
+// }
+// h6 {
+// 	font-size: px-to-rem(13px);
+// 	font-weight: 700;
+// 	margin-bottom: px-to-rem(8px);
+// }
+// p {
+// 	font-size: px-to-rem(13px);
+// 	margin-bottom: px-to-rem(24px);
+// }
+
+// sup, sub {
+// 	font-size: 75%;
+// 	line-height: 0;
+// 	position: relative;
+// }
+// sup {
+// 	top: -0.5em;
+// }
+// sub {
+// 	bottom: -0.25em;
+// }
+
+// small {
+// 	font-size: 0.875rem;
+// }
+
+// strong, b {
+// 	font-weight: 700;
+// }
+// em, i {
+// 	font-style: italic;
+// }
+// u {
+// 	text-decoration: underline;
+// }
+
+// time {
+// 	@extend p;
+// }

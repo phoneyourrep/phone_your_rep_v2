@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------------------------
+// Descriptive
+// @purpose define the colors
+// @naming_convention generalColor-tintOrShadeNum
+//---------------------------------------------------------------------------------------------
+$brand-primary: blue;
+$brand-secondary: green;
+$brand-accent: pink;
+
+//White
+$white: #fff;
+
+//Greys
+$offwhite: #fdfbfb;
+$lightest-gray-4: #ebedee;
+$lightest-gray-3: #e1e1e1;
+$lightest-gray-2: #979797;
+$lightest-gray: #f8f8f8;
+$lighter-gray: #dfdfdf;
+$light-gray: #d9d9d9;
+$mediumLight-gray: #a2a2a2;
+$medium-gray: #9b9b9b;
+$mediumDark-gray: #767676;
+$dark-gray: #202020;
+$black: #000;
+$brown-gray: #868686;
+
+//Utility Colors
+$red: red; //for errors

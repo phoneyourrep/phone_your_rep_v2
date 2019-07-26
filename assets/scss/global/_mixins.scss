@@ -1,0 +1,209 @@
+//------------------------------------------------------------------------------
+// Button & Link Helpers
+//------------------------------------------------------------------------------
+@mixin button(){
+	display: inline-block;
+	text-decoration: none;
+	font-size: px-to-rem(10px);
+	font-weight: 600;
+	letter-spacing: px-to-em(3.3px);
+	text-transform: uppercase;
+	text-align: center;
+	padding: px-to-rem(20px) px-to-rem(40px) px-to-rem(19px) px-to-rem(40px);
+	color: $btn-color;
+	background-color: $btn-bkgdColor;
+	border: none;
+	margin-bottom: px-to-rem(15px);
+	transition: all 0.3s ease;
+
+	&:hover, &:focus {
+		background-color: $btn-bkgdColor-hover;
+		cursor: pointer;
+	}
+
+	&[disabled]{
+		color: $btn-color-disabled;
+		background-color: $btn-bkgdColor-disabled;
+
+		&:hover, &:focus {
+			text-decoration: none;
+			cursor: not-allowed;
+		}
+	}
+}
+
+@mixin link-to-button(){
+	@include button();
+
+	&:hover, &:focus {
+		color: $btn-color;
+		background-color: $btn-bkgdColor-hover;
+		text-decoration: none;
+	}
+}
+
+@mixin button-to-link(){
+	font-size: px-to-rem(13px);
+	background-color: transparent;
+	text-transform: none;
+	letter-spacing: normal;
+	font-weight: normal;
+	text-align: left;
+	padding: 0;
+	margin-bottom: 0;
+
+	&:hover, &:focus {
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+	&[disabled] {
+		cursor: not-allowed;
+		color: $link-color-disabled;
+		background-color: transparent;
+	}
+}
+
+@mixin button-to-icon($height: px-to-rem(20px), $width: px-to-rem(20px), $background-image-name: 'test'){
+	text-indent: -999999rem;
+	background-color: transparent;
+	width: $width;
+	height: $height;
+	padding: 0;
+	margin-bottom: 0;
+
+	@if ($background-image-name != 'test'){
+		background: url('/assets/img/#{$background-image-name}.svg') 0 0 no-repeat;
+		background-size: contain;
+	}
+
+	&:hover, &:focus {
+		background-color: transparent;
+	}
+}
+
+@mixin remove-button(){
+	font-weight: inherit;
+	letter-spacing: normal;
+	text-transform: none;
+	text-align: left;
+	padding: 0;
+	color: $primaryText-color;
+	background-color: transparent;
+
+	&:hover, &:focus {
+		background-color: transparent;
+	}
+}
+
+//------------------------------------------------------------------------------
+// Display
+//------------------------------------------------------------------------------
+@mixin hide(){//allows content to be read by screen readers but hides it visually for sighted users
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@mixin show(){//shows content that has previously been hidden with hide()
+    position: relative;
+    left: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+//------------------------------------------------------------------------------
+// CSS Shapes
+//------------------------------------------------------------------------------
+@mixin x-icon($position: 'right', $color: $x-color, $hover-color: $x-color-hover){
+	position: relative;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		background-color: $color;
+		transform: translateY(-50%) rotate(45deg);
+	}
+
+	&::before {
+		@if $position == 'right' {
+			right: px-to-rem(5px);
+		} @else {
+			left: px-to-rem(5px);
+		}
+		height: px-to-rem(12px);
+		width: px-to-rem(2px);
+	}
+
+	&::after {
+		@if $position == 'right' {
+			right: 0;
+		} @else {
+			left: 0;
+		}
+		height: px-to-rem(2px);
+		width: px-to-rem(12px);
+	}
+
+	&:hover, &:focus {
+		&::before, &::after {
+			background-color: $hover-color;
+		}
+	}
+}
+
+@mixin arrow-cta($direction: 'right'){
+	position: relative;
+
+	@if $direction == 'right' {
+		padding-right: px-to-rem(25px);
+	} @else if $direction == 'left' {
+		padding-left: px-to-rem(25px);
+	}
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		// top: 0;
+		height: px-to-rem(2px);
+		width: px-to-rem(8px);
+		background-color: $arrow-color;
+
+		@if $direction == 'right' {
+			right: 0;
+		} @else if $direction == 'left' {
+			left: 0;
+		}
+	}
+
+	&::before {
+		top: calc(48% - #{px-to-rem(3px)});
+	}
+
+	&::after {
+		top: calc(48% + #{px-to-rem(3px)});
+	}
+
+	@if $direction == 'right' {
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	} @else if $direction == 'left' {
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+}
