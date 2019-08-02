@@ -1,73 +1,83 @@
-// body {
-// 	line-height: 1.5;
-// 	color: $primaryText-color;
-// 	background-color: $body-bkgdColor;
-// }
+body {
+	line-height: 1.6;
+	color: $primaryText-color;
+	background-color: $body-bkgdColor;
+}
 
-// h1 {
-// 	font-size: px-to-rem(50px);
-// 	letter-spacing: px-to-em(-0.3px);
-// 	font-weight: 500;
-// 	margin-bottom: px-to-rem(2px);
-// }
-// h2 {
-// 	font-size: px-to-rem(30px);
-// 	font-weight: 500;
-// 	line-height: 1;
-// 	margin-bottom: px-to-rem(11px);
-// }
-// h3 {
-// 	font-size: px-to-rem(16px);
-// 	line-height: 1.38;
-// 	font-weight: 700;
-// 	margin-bottom: px-to-rem(18px);
-// }
-// h4 {
-// 	font-size: px-to-rem(14px);
-// 	font-weight: 700;
-// 	margin-bottom: px-to-rem(8px);
-// }
-// h5 {
-// 	font-size: px-to-rem(13px);
-// 	font-weight: 500;
-// 	margin-bottom: px-to-rem(8px);
-// }
-// h6 {
-// 	font-size: px-to-rem(13px);
-// 	font-weight: 700;
-// 	margin-bottom: px-to-rem(8px);
-// }
-// p {
-// 	font-size: px-to-rem(13px);
-// 	margin-bottom: px-to-rem(24px);
-// }
+h1 {
+	font-size: px-to-rem(22px);
+	font-weight: 600;
+}
+h2 {
+	font-size: px-to-rem(12px);
+	font-weight: 400;
+	margin-bottom: px-to-rem(18px);
+}
+h3 {
+	font-size: px-to-rem(12px);
+	font-weight: 600;
+	margin-bottom: px-to-rem(2px);
+}
+h4 {
+	font-size: px-to-rem(12px);
+	font-weight: 400;
+	margin-bottom: px-to-rem(2px);
+}
+h5 {
+	font-size: px-to-rem(11px);
+	font-weight: 600;
+}
+h6 {
+	font-size: px-to-rem(11px);
+	font-weight: 400;
+}
+p {
+	font-size: px-to-rem(12px);
+	margin-bottom: px-to-rem(22px);
+}
 
-// sup, sub {
-// 	font-size: 75%;
-// 	line-height: 0;
-// 	position: relative;
-// }
-// sup {
-// 	top: -0.5em;
-// }
-// sub {
-// 	bottom: -0.25em;
-// }
+sup, sub {
+	font-size: 80%;
+	line-height: 0;
+	position: relative;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
 
-// small {
-// 	font-size: 0.875rem;
-// }
+small {
+	font-size: px-to-rem(11px);
+}
 
-// strong, b {
-// 	font-weight: 700;
-// }
-// em, i {
-// 	font-style: italic;
-// }
-// u {
-// 	text-decoration: underline;
-// }
+strong, b {
+	font-weight: 600;
+}
+em, i {
+	font-style: italic;
+}
+u {
+	text-decoration: underline;
+}
 
-// time {
-// 	@extend p;
-// }
+time {
+	font-size: px-to-rem(12px);
+}
+
+blockquote {
+	font-size: px-to-rem(12px);
+
+	cite {
+		display: block;
+	}
+}
+cite {
+	font-style: italic;
+}
+
+ins {
+	background-color: transparent;
+	color: $primaryText-color;
+}

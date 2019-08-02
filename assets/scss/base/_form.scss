@@ -1,0 +1,189 @@
+* {
+	&:focus {
+		outline: 2px solid $outline-color;
+	}
+
+	// &:invalid {		
+	// 	&:focus {
+	// 		outline: 2px solid $outline-color-error;
+	// 	}
+	// }
+}
+
+// .focus--mouse {
+// 	outline: none;
+// }
+
+legend {
+	display: block;
+	font-weight: 600;
+	margin-bottom: px-to-rem(10px);
+}
+
+label {
+	display: block;
+	font-size: px-to-rem(12px);
+	font-weight: 400;
+	color: $label-color;
+}
+
+[type="text"], [type="email"], [type="password"], [type="tel"], [type="url"], [type="number"], [type="search"], [type="date"], textarea, select {
+	display: block;
+	width: 100%;
+	max-width: $form-el-max-width;
+	font-size: px-to-rem(12px);
+	font-weight: 600;
+	color: $input-color;
+	background-color: $input-bkgdColor;
+	padding: px-to-rem(23px) px-to-rem(12px) px-to-rem(8px) px-to-rem(12px);
+	border: none;
+	margin-bottom: px-to-rem(20px);
+	border-radius: 0;//to keep iOS from rounding borders
+	box-shadow: 0 2px 4px 0 rgba($input-boxShadowColor, 0.1);
+}
+
+[type="file"]{
+	display: block;
+	width: 100%;
+	max-width: $form-el-max-width;
+	font-size: px-to-rem(12px);
+	color: $input-color;
+	margin-bottom: px-to-rem(20px);
+}
+
+@supports ((-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none)) {
+	[type="search"] {
+		-webkit-appearance: none;//to keep iOS legacy versions from rounding borders
+	}
+}
+
+textarea {
+	min-height: px-to-rem(140px);
+}
+
+::placeholder {
+	color: $placeholder-color;
+}
+
+select {
+	height: px-to-rem(49px);
+	font-size: px-to-rem(12px);
+	font-weight: 600;
+
+	&[disabled]{
+		cursor: not-allowed;
+		background-color: $select-bkgdColor-disabled;
+	}
+}
+
+[type="checkbox"], [type="radio"] {
+	float: left;
+	position: absolute;
+	left: -999999rem;
+
+	+ label {
+		position: relative;
+		color: $checkboxLabel-color;
+		font-weight: 600;
+		padding-left: px-to-rem(23px);
+		margin-bottom: px-to-rem(10px);
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: px-to-rem(3px);
+			left: 0;
+			height: px-to-rem(14px);
+			width: px-to-rem(13px);
+			background-color: $checkbox-bkgdColor;
+		}
+	}
+
+	&:checked {
+		+ label {
+			color: $checkboxLabel-color-checked;
+
+			&::before {
+				background-color: $checkbox-bkgdColor-checked;
+			}
+		}
+	}
+
+	&:focus {
+		+ label {
+			outline: 2px solid $outline-color;
+		}
+
+	// 	&.focus--mouse {
+	// 		+ label {
+	// 			outline: none;
+	// 		}
+	// 	}
+	// }
+
+	// &:invalid {
+	// 	&:focus {
+	// 		+ label {
+	// 			outline: 2px solid $outline-color-error;
+	// 		}
+	// 	}
+	}
+}
+
+[type="checkbox"] {
+	&:checked {
+		+ label {
+			&::after {
+				content: '✓';
+				position: absolute;
+				top: px-to-rem(0.75px);
+				left: px-to-rem(1.75px);
+				height: px-to-rem(12px);
+				width: px-to-rem(12px);
+				color: $checkmark-color;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+[type="radio"] {
+	float: left;
+	position: absolute;
+	left: -999999rem;
+
+	+ label {
+		&::before {
+			border-radius: 50%;
+		}
+	}
+
+	&:checked {
+		+ label {
+			&::after {
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+[type="reset"] {
+	border: none;
+	@include button-to-link();
+}
+
+[type="submit"], [type="button"] {
+	@include button();
+}
+
+//Overlay Labels
+.input-group {
+	position: relative;
+
+	label {
+		position: absolute;
+		bottom: px-to-rem(21px);
+		left: px-to-rem(12px);
+	}
+}

@@ -4,16 +4,14 @@
 @mixin button(){
 	display: inline-block;
 	text-decoration: none;
-	font-size: px-to-rem(10px);
+	font-size: px-to-rem(12px);
 	font-weight: 600;
-	letter-spacing: px-to-em(3.3px);
-	text-transform: uppercase;
 	text-align: center;
-	padding: px-to-rem(20px) px-to-rem(40px) px-to-rem(19px) px-to-rem(40px);
+	padding: px-to-rem(9.5px) px-to-rem(15px);
 	color: $btn-color;
 	background-color: $btn-bkgdColor;
 	border: none;
-	margin-bottom: px-to-rem(15px);
+	margin-bottom: px-to-rem(13px);
 	transition: all 0.3s ease;
 
 	&:hover, &:focus {
@@ -43,11 +41,9 @@
 }
 
 @mixin button-to-link(){
-	font-size: px-to-rem(13px);
+	@extend a;
 	background-color: transparent;
 	text-transform: none;
-	letter-spacing: normal;
-	font-weight: normal;
 	text-align: left;
 	padding: 0;
 	margin-bottom: 0;
@@ -58,8 +54,6 @@
 	}
 
 	&[disabled] {
-		cursor: not-allowed;
-		color: $link-color-disabled;
 		background-color: transparent;
 	}
 }

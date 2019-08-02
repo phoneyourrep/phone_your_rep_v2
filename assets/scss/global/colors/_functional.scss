@@ -5,44 +5,36 @@
 //---------------------------------------------------------------------------------------------
 
 //Global
-$body-bkgdColor: $lightest-gray;
-$primaryText-color: $dark-gray;
+$body-bkgdColor: $gallery;
+$primaryText-color: $raven;
 $content-bkgdColor: $white;
-$outline-color: $brand-primary;
-$outline-color-error: $red;
+$outline-color: $raven;
+// $outline-color-error: $red;
 
 //Links
-$link-color: $brand-accent;
-$link-color-hover: lighten($brand-accent, 10%);
-$link-color-disabled: $medium-gray;
+$link-color: $cold-purple;
+$link-color-hover: $havelock-blue;
+$link-color-disabled: $raven;
 
 //Buttons
 $btn-color: $white;
-$btn-bkgdColor: $dark-gray;
-$btn-bkgdColor-hover: lighten($dark-gray, 20%);
-$btn-bkgdColor-disabled: $light-gray;
-$btn-color-disabled: $dark-gray;
-$secondaryBtn-color: $dark-gray;
-$secondaryBtn-color-hover: $white;
+$btn-bkgdColor: $havelock-blue;
+$btn-bkgdColor-hover: $mirage;
+$btn-bkgdColor-disabled: $gallery;
+$btn-color-disabled: $mirage;
 
 //Forms
-$focus-borderColor: $brand-secondary;
-$input-color: $dark-gray;
+$input-color: $mirage;
 $input-bkgdColor: $white;
-$input-borderColor: $lighter-gray;
-$select-borderColor: $dark-gray;
-$select-color-disabled: $mediumDark-gray;
-$select-bkgdColor-disabled: $lighter-gray;
-$label-color: $mediumDark-gray;
-$label-bkgdColor: $white;
-$placeholder-color: $mediumDark-gray;
-$input-bkgdColor-checked: $brand-primary;
-
-//Tables
-$th-color: $white;
-$th-bkgdColor: $dark-gray;
-$tr-bkgdColor: $lighter-gray;
-$table-borderColor: $light-gray;
+$input-boxShadowColor: $lynch;
+$select-bkgdColor-disabled: $gallery;
+$label-color: $raven;
+$placeholder-color: $raven;
+$checkbox-bkgdColor: $mischka;
+$checkbox-bkgdColor-checked: $havelock-blue;
+$checkmark-color: $white;
+$checkboxLabel-color: $cold-purple;
+$checkboxLabel-color-checked: $havelock-blue;
 
 //Messaging
 

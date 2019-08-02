@@ -1,0 +1,17 @@
+a {
+	font-size: px-to-rem(12px);
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		cursor: pointer;
+		color: $link-color-hover;
+		text-decoration: underline;
+		text-decoration-skip-ink: auto;
+	}
+
+	&[disabled]{
+		cursor: not-allowed;
+		color: $link-color-disabled;
+	}
+}
