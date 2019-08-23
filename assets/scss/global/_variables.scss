@@ -1,14 +1,12 @@
 //Max-widths
-// $site-max-width: px-to-rem(1024px);
+$site-max-width: px-to-rem(868px);
 $form-el-max-width: px-to-rem(528px);
 
 //Breakpoints
-// $breakpoint-xs: 'min-width: 20em';//~320px
-// $breakpoint-s: 'min-width: 28.75em';//~460px
-// $breakpoint-m: 'min-width: 50em';//~800px
-// $breakpoint-lg: 'min-width: 60em';//~960px
+$breakpoint-s: 'min-width: 22.625em';//~362px
+$breakpoint-m: 'min-width: 28.75em';//~460px
 
 //Gutters
-// $small-gutter: px-to-rem(12px);
-// $medium-gutter: px-to-rem(18px);
-// $large-gutter: px-to-rem(20px);
+$small-gutter: px-to-rem(12px);
+$medium-gutter: px-to-rem(18px);
+$large-gutter: px-to-rem(20px);

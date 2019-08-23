@@ -4,13 +4,13 @@
 //Global (specific order)
 @import 'global/colors/_descriptive';
 @import 'global/colors/_functional';
-@import 'global/_layout';
 @import 'global/_fonts';
 @import 'global/_functions';
 @import 'global/_variables';
 @import 'global/_mixins';
 @import 'global/_reset';
 @import 'global/_animations';
+@import 'global/_layout';
 
 //Patterns
 @import 'base/*.scss';

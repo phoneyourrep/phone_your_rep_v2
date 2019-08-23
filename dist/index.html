@@ -13,175 +13,34 @@
   
   <body>
   	<header id="header">
-  		header content here
+  		<a href="/" class="logo">Phone Your Rep</a>
+
+  		<nav id="nav">
+  			<ol>
+  				<li><a href="#" class="active">Search by location</a></li>
+  				<li><a href="#">Search by name</a></li>
+  				<li><a href="#">View all reps</a></li>
+  			</ol>
+  		</nav>
   	</header>
-  	
-  	<main>
-		<h1>Header One</h1>
-		<p>Paragraph text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
-		<h2>Header Two</h2>
-		<p>More paragraph text so you can see the spacing of all the headers accurately. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+	<main>
+		<h1>Phone Your Rep</h1><!-- only on HP, visually hidden -->
+		
 
-		<h3>Header Three</h3>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
-		<h4>Header Four</h4>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
-		<h5>Header Five</h5>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
-		<h6>Header Six</h6>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-		<p>Double paragraphs for this one so you can see the spacing of the Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
-		<h2>Blockquote</h2>
-		<blockquote>
-			Here's a blockquote with the author's name.
-			<cite>Author Name</cite>
-		</blockquote>
-
-		<h2>Small</h2>
-		<small class="pl-small">The small tag is used for side-comments and small print, such as legal text or copyright.</small>
-
-		<h2>Time</h2>
-		<time class="pl-time">time</time>
-
-		<h2>Inline Text</h2>
-		<p>The <strong>Strong element</strong> represents text with strong importance.</p>
-
-		<p><em>Emphasized text</em> is used to indicate emphasis.</p>
-
-		<p><b>Bold text</b> is stylistically different from normal text, without any conveying any special importance or relevance.</p>
-
-		<p><i>Italisized text</i> is offset from it's surrounding content without conveying any extra emphasis or importance.</p>
-
-		<p><u>Underlined text</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
-
-		<p><del>This text is deleted</del>, and <ins>this text is inserted.</ins></p>
-
-		<p>This is <s>Strikethrough text</s>.</p>
-
-		<p>This is superscript<sup>&copy;</sup> text.</p>
-
-		<p>Subscript text is like this: H<sub>2</sub>O.</p>
-
-		<p>Abbreviation looks like this: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
-
-		<p>Keyboard input: <kbd>Cmd</kbd></p>
-
-		<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short, inline quotation.</q></p>
-
-		<p><cite>This is a citation</cite>. It defines the title of a work, such as a book, song, movie, or painting.</p>
-	
-		<h2>Unordered List</h2>
-		<ul>
-			<li>Here's an unordered list.</li>
-			<li>Item number two</li>
-			<li>Here's item number three</li>
-		</ul>
-
-		<h2>Ordered List</h2>
-		<ol>
-			<li>Here's an ordered list.</li>
-			<li>Item number two</li>
-			<li>Here's item number three</li>
-		</ol>
-
-		<h2>Definition List</h2>
-		<dl>
-			<dt>Term 1</dt>
-			<dd>This is the definition of term 1.</dd>
-
-			<dt>Term 2</dt>
-			<dd>This is the definition of term 2.</dd>
-		</dl>
-
-		<a href="#">Text link</a>
-
-		<p>This is what a <a href="#">text link</a> inside of a paragraph looks like.</p>
-
-		<a href="#" disabled>Disabled text link</a>
-
-		<img src="https://via.placeholder.com/36x36" alt="example image">
-
-		<form action="">
-			<div class="input-group">
-				<label for="name">Text</label>
-				<input type="text" name="name" id="name" />
-			</div>
-
-			<div class="input-group">
-				<label for="email">Email</label>
-				<input type="email" name="input-email" id="email" required />
-			</div>
-
-			<div class="input-group">
-				<label for="input-url">URL</label>
-				<input type="url" name="input-url" id="input-url" aria-describedby="#hint-url" />
-			</div>
-			<p id="hint-url">Include "http://" or "https://" in the URL.</p>
-
-			<div class="input-group">
-				<label for="input-password">Password</label>
-				<input type="password" name="input-password" id="input-password" />
-			</div>
-
-			<div class="input-group">
-				<label for="input-search">Search</label>
-				<input type="search" name="input-search" id="input-search" results="5" />
-			</div>
-
-			<fieldset>
-				<legend>Select Options</legend>
-				<input id="checkbox-1" name="test" type="checkbox" /><label for="checkbox-1">Checkbox 1</label>
-				<input id="checkbox-2" name="test" type="checkbox" /><label for="checkbox-2">Checkbox 2</label>
-			</fieldset>
-
-			<input type="radio" id="radio-1" name="radio-test" /><label for="radio-1">Radio 1</label>
-			<input type="radio" id="radio-2" name="radio-test" /><label for="radio-2">Radio 2</label>
-
-			<div class="input-group">
-				<label for="zip">Text Zip</label>
-				<input type="text" name="zip" id="zip" />
-			</div>
-
-			<div class="input-group">
-				<label for="input-tel">Tel</label>
-				<input type="tel" name="input-tel" id="input-tel" placeholder="555-555-5555" required /><!-- if erorr, `aria-invalid="true" aria-describedBy="error-1"` -->
-			</div>
-			<!-- <p id="error-1">Here's the error message.</p> -->
-
-			<label for="input-date">Date Picker</label>
-			<input type="date" name="input-date" id="input-date" />
-
-			<label for="input-file">Choose a File</label>
-			<input type="file" name="input-file" id="input-file" />
-
-			<label for="select">Select</label>
-			<select name="select-input" id="select">
-				<option value="option1">Option 1</option>
-				<option value="option2">Option 2</option>
-			</select>
-
-			<div class="input-group">
-				<label for="textarea">Textarea</label>
-				<textarea name="textarea" id="textarea"></textarea>
-			</div>
-
-			<input type="reset" value="Clear All">
-			<input type="button" value="Disabled Input Button" disabled />
-			<input type="submit" value="Submit" />
-		</form>
-
-		<button>Button</button>
-
-		<button disabled>Disabled Button</button>
 	</main>
 
 	<footer id="footer">
-		footer content here
+		<div class="purpose">
+			<p class="title">Call Local. Call Often.</p>
+			<p>If we want to affect our politics, we need good representation. Our reps need to hear us if they're going to represent us.</p>
+		</div>
+
+		<ul>
+			<li><a href="#" class="twitter">Tweet Us</a></li>
+			<li><a href="#" class="github">Contribute on GitHub</a></li>
+			<li><a href="#" class="report">Report a Problem</a></li>
+		</ul>
 	</footer>
   </body>
 </html>

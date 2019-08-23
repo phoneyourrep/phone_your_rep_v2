@@ -1,7 +1,7 @@
 //convert column numbers to percentage
-// @function grid($columns, $totalColumns){
-// 	@return percentage();
-// }
+@function grid($columns, $totalColumns){
+	@return percentage($columns / $totalColumns);
+}
 
 //convert px value to rem value
 @function px-to-rem($px, $base:16px){

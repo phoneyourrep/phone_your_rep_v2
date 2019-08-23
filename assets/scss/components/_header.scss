@@ -1,0 +1,46 @@
+#header {
+	padding: px-to-rem(26px) $medium-gutter 0 $medium-gutter;
+	width: 100%;
+	background-color: $header-bkgdColor;
+	// max-width: $site-max-width;
+	// margin: 0 auto;
+	margin-bottom: px-to-rem(26px);
+
+	.logo {
+		display: block;
+		text-indent: -999999rem;
+		// background: url('../../img/phone-your-rep.svg') no-repeat;
+		margin-bottom: px-to-rem(13px);
+	}
+}
+
+#nav {
+	ol {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: px-to-rem(10px);
+	}
+
+	a {
+		display: block;
+		color: $headerLink-color;
+		font-weight: 600;
+		padding: px-to-rem(10px) 0;
+
+		&.active {
+			color: $headerLink-color-active;
+		}
+	}
+
+	@media ($breakpoint-s) {
+		ol {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+
+		li {
+			padding-right: $medium-gutter;
+		}
+	}
+}
