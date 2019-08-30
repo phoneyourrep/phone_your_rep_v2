@@ -1,10 +1,12 @@
 //Max-widths
-$site-max-width: px-to-rem(868px);
+$site-max-width: px-to-rem(904px);
 $form-el-max-width: px-to-rem(528px);
 
 //Breakpoints
 $breakpoint-s: 'min-width: 22.625em';//~362px
 $breakpoint-m: 'min-width: 28.75em';//~460px
+$breakpoint-lg: 'min-width: 43em';//~688px
+$breakpoint-xl: 'min-width: 56.5em';//~904px
 
 //Gutters
 $small-gutter: px-to-rem(12px);

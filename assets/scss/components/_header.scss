@@ -1,16 +1,32 @@
 #header {
-	padding: px-to-rem(26px) $medium-gutter 0 $medium-gutter;
 	width: 100%;
 	background-color: $header-bkgdColor;
-	// max-width: $site-max-width;
-	// margin: 0 auto;
-	margin-bottom: px-to-rem(26px);
+	box-shadow: 0 2px 0 $header-boxShadow;
+
+	> div {
+		padding: px-to-rem(26px) $medium-gutter 0 $medium-gutter;
+	}
 
 	.logo {
 		display: block;
-		text-indent: -999999rem;
+		// text-indent: -999999rem;
 		// background: url('../../img/phone-your-rep.svg') no-repeat;
 		margin-bottom: px-to-rem(13px);
+	}
+
+	@media ($breakpoint-lg) {
+		> div {
+			display: flex;
+			align-items: center;
+			max-width: $site-max-width;
+			padding: px-to-rem(5px) $medium-gutter;
+			margin: 0 auto;
+		}
+
+		.logo {
+			margin-right: px-to-rem(59px);
+			margin-bottom: 0;
+		}
 	}
 }
 

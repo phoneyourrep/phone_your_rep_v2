@@ -1,8 +1,6 @@
 #footer {
 	padding: px-to-rem(34px) $medium-gutter px-to-rem(20px) $medium-gutter;
 	width: 100%;
-	// max-width: $site-max-width;
-	// margin: 0 auto;
 
 	p {
 		margin-bottom: px-to-rem(30px);
@@ -62,6 +60,8 @@
 	@media ($breakpoint-m) {
 		display: flex;
 		justify-content: space-between;
+		max-width: $site-max-width;
+		margin: 0 auto;
 
 		.purpose {
 			width: 45.16%;
