@@ -1,0 +1,50 @@
+//---------------------------------------------------------------------------------------------
+// Functional
+// @purpose where colors will be used
+// @naming_convention contentType-purpose-specify
+//---------------------------------------------------------------------------------------------
+
+//Global
+$body-bkgdColor: $gallery;
+$primaryText-color: $raven;
+$content-bkgdColor: $white;
+$outline-color: $raven;
+// $outline-color-error: $red;
+
+//Links
+$link-color: $cold-purple;
+$link-color-hover: $havelock-blue;
+$link-color-disabled: $raven;
+
+//Buttons
+$btn-color: $white;
+$btn-bkgdColor: $havelock-blue;
+$btn-bkgdColor-hover: $mirage;
+$btn-bkgdColor-disabled: $gallery;
+$btn-color-disabled: $mirage;
+
+//Forms
+$input-color: $mirage;
+$input-bkgdColor: $white;
+$input-boxShadowColor: $lynch;
+$select-bkgdColor-disabled: $gallery;
+$label-color: $raven;
+$placeholder-color: $raven;
+$checkbox-bkgdColor: $mischka;
+$checkbox-bkgdColor-checked: $havelock-blue;
+$checkmark-color: $white;
+$checkboxLabel-color: $cold-purple;
+$checkboxLabel-color-checked: $havelock-blue;
+
+//Messaging
+
+//Errors
+
+//Header
+$headerLink-color: $cold-purple;
+$headerLink-color-active: $havelock-blue;
+$header-bkgdColor: $white;
+$header-boxShadow: rgba($lynch, 0.1);
+
+//Footer
+$footerLink-color: $havelock-blue;

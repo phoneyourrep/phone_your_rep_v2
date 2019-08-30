@@ -1,0 +1,14 @@
+//convert column numbers to percentage
+@function grid($columns, $totalColumns){
+	@return percentage($columns / $totalColumns);
+}
+
+//convert px value to rem value
+@function px-to-rem($px, $base:16px){
+  @return ($px / $base) * 1rem;
+}
+
+//convert px value to em value
+@function px-to-em($px, $base:16px){
+  @return ($px / $base) * 1em;
+}
