@@ -29,17 +29,18 @@
 		&::before {
 			content: '';
 			position: absolute;
-			top: 0;
+			top: 50%;
 			left: 0;
 			height: px-to-rem(14px);
 			width: px-to-rem(14px);
+			transform: translateY(-50%);
 		}
 
 		&.twitter {
 			&::before {
 				height: px-to-rem(9px);
 				width: px-to-rem(12px);
-				// background: url('../../img/twitter.svg') no-repeat;
+				background: url('../../img/twitter.svg') center center no-repeat;
 			}
 		}
 
@@ -47,13 +48,13 @@
 			&::before {
 				height: px-to-rem(14px);
 				width: px-to-rem(14px);
-				//background: url('../../img/github.svg') no-repeat;
+				background: url('../../img/github.svg') center center no-repeat;
 			}
 		}
 
-		&.report {
+		&.mail {
 			&::before {
-				//background: url('../../img/report.svg') no-repeat;
+				background: url('../../img/mail.svg') center center no-repeat;
 			}
 		}
 	}
