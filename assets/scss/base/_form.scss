@@ -25,6 +25,7 @@ label {
 	font-size: px-to-rem(12px);
 	font-weight: 400;
 	color: $label-color;
+	margin-bottom: px-to-rem(10px);
 }
 
 [type="text"], [type="email"], [type="password"], [type="tel"], [type="url"], [type="number"], [type="search"], [type="date"], textarea, select {
@@ -35,7 +36,7 @@ label {
 	font-weight: 600;
 	color: $input-color;
 	background-color: $input-bkgdColor;
-	padding: px-to-rem(23px) px-to-rem(12px) px-to-rem(8px) px-to-rem(12px);
+	padding: px-to-rem(27px) px-to-rem(12px) px-to-rem(8px) px-to-rem(12px);
 	border: none;
 	margin-bottom: px-to-rem(20px);
 	border-radius: 0;//to keep iOS from rounding borders
@@ -179,11 +180,13 @@ select {
 
 //Overlay Labels
 .input-group {
-	position: relative;
+	@media ($breakpoint-xs) {
+		position: relative;
 
-	label {
-		position: absolute;
-		top: px-to-rem(5px);
-		left: px-to-rem(12px);
+		label {
+			position: absolute;
+			top: px-to-rem(5px);
+			left: px-to-rem(12px);
+		}
 	}
 }

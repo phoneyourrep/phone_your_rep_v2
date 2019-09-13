@@ -1,0 +1,35 @@
+.search {
+	@media ($breakpoint-xs) {
+		display: flex;
+		align-items: stretch;
+		margin-bottom: px-to-rem(20px);
+
+		.input-group {
+			width: 100%;
+			max-width: $form-el-max-width;
+		}
+
+		input {
+			margin-bottom: 0;
+		}
+
+		[type="submit"] {
+			position: relative;
+			text-indent: -999999rem;
+			width: px-to-rem(54px);
+			margin-bottom: 0;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				height: px-to-rem(24px);
+				width: px-to-rem(24px);
+				background: url('../../../assets/img/search.svg');
+				background-size: contain;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
