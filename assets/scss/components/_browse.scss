@@ -1,0 +1,44 @@
+.browse {
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		display: block;
+		padding: px-to-rem(10px) 0;
+	}
+
+	@media ($breakpoint-xs) {
+		display: flex;
+
+		p {
+			display: inline;
+			white-space: nowrap;
+			margin-right: px-to-rem(8px);
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			padding-left: 0;
+		}
+
+		li {
+			white-space: nowrap;
+			margin-right: px-to-rem(12px);
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			padding: 0;
+		}
+	}
+
+	@media ($breakpoint-lg) {
+		padding-left: $small-gutter;
+	}
+}

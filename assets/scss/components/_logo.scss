@@ -1,0 +1,11 @@
+.logo {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	max-width: px-to-rem(200px);
+	margin-bottom: px-to-rem(13px);
+
+	span {
+		@include hide();
+	}
+}

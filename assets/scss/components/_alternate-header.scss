@@ -1,0 +1,23 @@
+.alternate-header {
+	text-align: center;
+	padding: 15vh $small-gutter 0 $small-gutter;
+	margin-bottom: px-to-rem(13px);
+
+	.logo {
+		margin: 0 auto px-to-rem(12px) auto;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	@media ($breakpoint-lg) {
+		padding-top: 9.75vh;
+		max-width: $hp-max-width;
+		margin: 0 auto px-to-rem(22px) auto;
+
+		.logo {
+			max-width: px-to-rem(319px);
+		}
+	}
+}

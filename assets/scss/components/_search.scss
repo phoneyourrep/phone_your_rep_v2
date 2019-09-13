@@ -1,5 +1,7 @@
 .search {
-	@media ($breakpoint-xs) {
+	margin-bottom: px-to-rem(24px);
+	
+	@media ($breakpoint-xxs) {
 		display: flex;
 		align-items: stretch;
 		margin-bottom: px-to-rem(20px);
